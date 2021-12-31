@@ -31,7 +31,7 @@ Odd numbered week homework assignment. Develop given code prompts to generate a 
 
 ## Installation
 <br>
-** Go to <a href="https://jasonjayoo.github.io/My-Professional-Portfolio/" target="_blank">My-Professional-Portfolio</a> In order to view My Professional Portfolio Webpage.
+** Go to <a href="https://jasonjayoo.github.io/password-generator/" target="_blank">Password-Generator</a> In order to view the Password Generator Webpage.
 
 <br>
 <br>
@@ -181,12 +181,12 @@ Odd numbered week homework assignment. Develop given code prompts to generate a 
 
 ## URL (Github Repository):
 
-Click [here](https://github.com/jasonjayoo/My-Professional-Portfolio) to go to My-Professional-Portfolio Github Repository
+Click [here](https://github.com/jasonjayoo/password-generator) to go to the Password-Generator Github Repository
 
 <br>
 
 ## URL (Published Webpage):
 
-<a href="https://jasonjayoo.github.io/My-Professional-Portfolio/" target="_blank">My-Professional-Portfolio</a>
+<a href="https://jasonjayoo.github.io/password-generator/" target="_blank">Password-Generator</a>
 
 
