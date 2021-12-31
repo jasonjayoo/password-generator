@@ -31,7 +31,7 @@ Odd numbered week homework assignment. Develop given code prompts to generate a 
 
 ## Installation
 <br>
-** Go to <a href="https://jasonjayoo.github.io/password-generator/" target="_blank">Password-Generator</a> In order to view the Password Generator Webpage.
+** Go to <a href="https://jasonjayoo.github.io/password-generator" target="_blank">Password-Generator</a> In order to view the Password Generator Webpage.
 
 <br>
 <br>
