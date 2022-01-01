@@ -153,7 +153,7 @@ function generatePassword() {
     };
   }
 
-// once the selections for different characters has been made and pushed (added to the end of) the 'possiblePassword' var the entire randomChar will be pushed (added to the end of the) 'results' var (array).
+// once the selections for different characters has been made, the randomIndex which will be a randomly generated character total of the gathered possiblePassword plus the length of the password chosen by the user will then be pushed (added to the end of) the 'possiblePassword' array then the entire randomChar will be pushed (added to the end of the) 'results' var (array).
 
   for (let i = 0; i < length; i++){
     var randomIndex = Math.floor(Math.random() * possiblePassword.length);
@@ -161,11 +161,12 @@ function generatePassword() {
     results.push(randomChar);
   };
 
-// return the results var with .join to remove the quotations from each random character and join it in one sequenced line. 
+// will produce the results of the password generator algorithm. (.join)added to remove the quotations from each randomly generated character and join it into one sequenced line. 
 
   return results.join('');
 
 }
+
 // where function generate password() ends
 
 // clipboard (results.join('');)
