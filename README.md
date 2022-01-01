@@ -130,15 +130,14 @@ Odd numbered week homework assignment. Develop given code prompts to generate a 
 2. The generate password button will deploy a prompt for the users to select customized options
 3. The password length as specified was set to a minimum of 8 characters and a maximum of 128 characters. Anything outside those parameters will be kicked back to the original password length prompt. 
 4. When a character length between 8 and 128 has been added by the user the display prompt will ask if the user would like to include:
-<br>
-<br>
-        a). Uppercase Character
+<br><br>
+             a). Uppercase Character
         <br>
-        b). Lowercase Character
+             b). Lowercase Character
         <br>
-        c). Special (symbol) Character
+             c). Special (symbol) Character
         <br>
-        d). Numeric Character
+             d). Numeric Character
         <br>
         <br>
         * [ok] means include, [cancel] means do not include. 
