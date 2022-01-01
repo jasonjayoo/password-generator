@@ -113,7 +113,7 @@ function generatePassword() {
 
   // randomIndex set to be math.floor in conjunction with math.random to generate a randomized integers/characters.
 
-  // if user selects to include uppercase characters, randomized uppercase characters will be pushed to 'possiblePassword' var.
+  // if user selects to include uppercase characters, randomized uppercase characters will be pushed (added to the end of) the 'possiblePassword' array.
 
   if (hasUpper === true) {
     for (let i = 0; i < length; i++){
@@ -123,7 +123,7 @@ function generatePassword() {
     };
   }
 
-  //if user selects to include lowercase characters, randomized lowercase characters will be pushed to 'possiblePassword' var.
+  //if user selects to include lowercase characters, randomized lowercase characters will be pushed (added to the end of) the 'possiblePassword' array.
 
   if (hasLower === true) {
     for (let i = 0; i < length; i++){
@@ -133,7 +133,7 @@ function generatePassword() {
     };
   }
 
-  //if user selects to include special characters, randomized special characters will be pushed to 'possiblePassword' var.
+  //if user selects to include special characters, randomized special characters will be pushed (added to the end of) the 'possiblePassword' array.
 
   if (hasSpecial === true) {
     for (let i = 0; i < length; i++){
@@ -143,7 +143,7 @@ function generatePassword() {
     };
   }
   
-  //if user selects to include numeric characters, randomized numeric characters will be pushed to 'possiblePassword' var.
+  //if user selects to include numeric characters, randomized numeric characters will be pushed (added to the end of) the 'possiblePassword' array.
 
   if (hasNumbers === true) {
     for (let i = 0; i < length; i++){
@@ -153,7 +153,7 @@ function generatePassword() {
     };
   }
 
-// once the selections for different characters has been made and pushed into the 'possiblePassword' var the entire randomChar will be pushed into the 'results' var
+// once the selections for different characters has been made and pushed (added to the end of) the 'possiblePassword' var the entire randomChar will be pushed (added to the end of the) 'results' var (array).
 
   for (let i = 0; i < length; i++){
     var randomIndex = Math.floor(Math.random() * possiblePassword.length);
@@ -166,6 +166,7 @@ function generatePassword() {
   return results.join('');
 
 }
+// where function generate password() ends
 
 // clipboard (results.join('');)
 
