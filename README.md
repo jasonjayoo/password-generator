@@ -41,25 +41,37 @@ Odd numbered week homework assignment. Develop given code prompts to generate a 
 <br>
 <br>
 
-[Screenshot1](images/Screenshot1.png)
+[Screenshot1](images/Screenshot1.png)  "Main Page"
 <img src="images/Screenshot1.png">
 
-[Screenshot2](images/Screenshot2.png)
+<br>
+
+[Screenshot2](images/Screenshot2.png)  "Password Length Prompt"
 <img src="images/Screenshot2.png">
 
-[Screenshot3](images/Screenshot3.png)
+<br>
+
+[Screenshot3](images/Screenshot3.png)  "Uppercase Selection Prompt"
 <img src="images/Screenshot3.png">
 
-[Screenshot4](images/Screenshot4.png)
+<br>
+
+[Screenshot4](images/Screenshot4.png)  "Lowercase Selection Prompt"
 <img src="images/Screenshot4.png">
 
-[Screenshot5](images/Screenshot5.png)
+<br>
+
+[Screenshot5](images/Screenshot5.png)  "Symbol Selection Prompt"
 <img src="images/Screenshot5.png">
 
-[Screenshot6](images/Screenshot6.png)
+<br>
+
+[Screenshot6](images/Screenshot6.png)  "Number Selection Prompt"
 <img src="images/Screenshot6.png">
 
-[Screenshot7](images/Screenshot7.png)
+<br>
+
+[Screenshot7](images/Screenshot7.png)  "Example Generated Password"
 <img src="images/Screenshot7.png">
 
 
