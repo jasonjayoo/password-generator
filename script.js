@@ -119,9 +119,9 @@ function generatePassword() {
     for (let i = 0; i < length; i++){
       // Math.floor used with Math.random to return a random whole number. In order to select random values from the upperCasedCharacters array.
       var randomIndex = Math.floor(Math.random() * upperCasedCharacters.length);
-      // new var of randomChar created to incorporate global scope var of upperCasedCharacters with the var randomIndex created above. (stacked codes below follows this logic - no additional explanations will be added below). The result of the var randomChar will then be added with the .push method to be store in the var possiblePassword.
-      var randomChar = upperCasedCharacters[randomIndex];
-      possiblePassword.push(randomChar);
+      // new var of randomChar created to incorporate global scope var of upperCasedCharacters with the var randomIndex created above. (stacked codes below follows this same logical pattern of coding - thus - no additional explanations will be added below). The result of the var randomCharacter will then be added with the .push method to be store in the var possiblePassword array.
+      var randomCharacter = upperCasedCharacters[randomIndex];
+      possiblePassword.push(randomCharacter);
     };
   }
 
@@ -130,8 +130,8 @@ function generatePassword() {
   if (hasLower === true) {
     for (let i = 0; i < length; i++){
       var randomIndex = Math.floor(Math.random() * lowerCasedCharacters.length);
-      var randomChar = lowerCasedCharacters[randomIndex];
-      possiblePassword.push(randomChar);
+      var randomCharacter = lowerCasedCharacters[randomIndex];
+      possiblePassword.push(randomCharacter);
     };
   }
 
@@ -140,8 +140,8 @@ function generatePassword() {
   if (hasSpecial === true) {
     for (let i = 0; i < length; i++){
       var randomIndex = Math.floor(Math.random() * specialCharacters.length);
-      var randomChar = specialCharacters[randomIndex];
-      possiblePassword.push(randomChar);
+      var randomCharacter = specialCharacters[randomIndex];
+      possiblePassword.push(randomCharacter);
     };
   }
   
@@ -150,8 +150,8 @@ function generatePassword() {
   if (hasNumbers === true) {
     for (let i = 0; i < length; i++){
       var randomIndex = Math.floor(Math.random() * numericCharacters.length);
-      var randomChar = numericCharacters[randomIndex];
-      possiblePassword.push(randomChar);
+      var randomCharacter = numericCharacters[randomIndex];
+      possiblePassword.push(randomCharacter);
     };
   }
 
@@ -159,8 +159,8 @@ function generatePassword() {
 
   for (let i = 0; i < length; i++){
     var randomIndex = Math.floor(Math.random() * possiblePassword.length);
-    var randomChar = possiblePassword[randomIndex];
-    results.push(randomChar);
+    var randomCharacter = possiblePassword[randomIndex];
+    results.push(randomCharacter);
   };
 
 // will produce the results of the random password generator algorithm. (.join)added to remove the quotations from each randomly generated characters value and join it into one sequenced line. 
