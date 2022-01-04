@@ -104,26 +104,28 @@ function generatePassword() {
     generatePassword();
   }
 
-  // var display prompt set for uppercase, lowercase, special (symbol), and numbers for users to include or not include in password creation.
+  // var display prompt set for uppercase, lowercase, special (symbols), and numbers for users to include or not include in password creation.
 
   var hasUpper = confirm("Would you like uppercase letters in your password?");
   var hasLower = confirm("Would you like lowercase letters in your password?");
   var hasSpecial = confirm("Would you like special characters in your password?");
   var hasNumbers = confirm("Would you like numeric characters in your password?");
 
-  // randomIndex set to be math.floor in conjunction with math.random to generate a randomized integers/characters.
 
-  // if user selects to include uppercase characters, randomized uppercase characters will be pushed (added to the end of) the 'possiblePassword' array.
+  // if user selects to include uppercase characters, randomized uppercase characters will be pushed (added to the end of) the 'possiblePassword' array. 
 
   if (hasUpper === true) {
+    // i (initialize) will start at the value designated for 0 in this case 0 = A. The end condition of i less than length, with i++ to increase in the increment of 1.
     for (let i = 0; i < length; i++){
+      // Math.floor used with Math.random to return a random whole number. In order to select random values from the upperCasedCharacters array.
       var randomIndex = Math.floor(Math.random() * upperCasedCharacters.length);
+      // new var of randomChar created to incorporate global scope var of upperCasedCharacters with the var randomIndex created above. (stacked codes below follows this logic - no additional explanations will be added below). The result of the var randomChar will then be added with the .push method to be store in the var possiblePassword.
       var randomChar = upperCasedCharacters[randomIndex];
       possiblePassword.push(randomChar);
     };
   }
 
-  //if user selects to include lowercase characters, randomized lowercase characters will be pushed (added to the end of) the 'possiblePassword' array.
+  //if user selects to include lowercase characters, randomized lowercase characters will be pushed (added to the end of) the 'possiblePassword' array. 
 
   if (hasLower === true) {
     for (let i = 0; i < length; i++){
@@ -133,7 +135,7 @@ function generatePassword() {
     };
   }
 
-  //if user selects to include special characters, randomized special characters will be pushed (added to the end of) the 'possiblePassword' array.
+  //if user selects to include special characters, randomized special characters will be pushed (added to the end of) the 'possiblePassword' array. 
 
   if (hasSpecial === true) {
     for (let i = 0; i < length; i++){
@@ -143,7 +145,7 @@ function generatePassword() {
     };
   }
   
-  //if user selects to include numeric characters, randomized numeric characters will be pushed (added to the end of) the 'possiblePassword' array.
+  //if user selects to include numeric characters, randomized numeric characters will be pushed (added to the end of) the 'possiblePassword' array. 
 
   if (hasNumbers === true) {
     for (let i = 0; i < length; i++){
@@ -153,7 +155,7 @@ function generatePassword() {
     };
   }
 
-// once the selections for different characters has been made, the randomIndex which will be a randomly generated character total of the gathered possiblePassword plus the length of the password chosen by the user will then be pushed (added to the end of) the 'possiblePassword' array then the entire randomChar will be pushed (added to the end of the) 'results' var (array).
+// once the selections for different characters has been made, the randomIndex which will be a randomly generated character total of the gathered possiblePassword plus the length of the password chosen by the user will then be pushed (added to the end of) the 'possiblePassword' array then the entire randomChar will be pushed (added to the end of the) 'results' array.
 
   for (let i = 0; i < length; i++){
     var randomIndex = Math.floor(Math.random() * possiblePassword.length);
@@ -161,7 +163,7 @@ function generatePassword() {
     results.push(randomChar);
   };
 
-// will produce the results of the password generator algorithm. (.join)added to remove the quotations from each randomly generated character and join it into one sequenced line. 
+// will produce the results of the random password generator algorithm. (.join)added to remove the quotations from each randomly generated characters value and join it into one sequenced line. 
 
   return results.join('');
 
