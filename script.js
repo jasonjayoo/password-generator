@@ -104,7 +104,7 @@ function generatePassword() {
     generatePassword();
   }
 
-  // var display prompt set for uppercase, lowercase, special (symbols), and numbers for users to include or not include in password creation.
+  // var display prompt set for uppercase, lowercase, special (symbols), and numbers for users to include or not include in password creation. confirm is used to verify if the user has selected to include any of them. 
 
   var hasUpper = confirm("Would you like uppercase letters in your password?");
   var hasLower = confirm("Would you like lowercase letters in your password?");
