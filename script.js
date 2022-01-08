@@ -102,9 +102,10 @@ function generatePassword() {
   var length = parseInt(prompt("How many characters do you like in your password? (Password needs to be between 8 - 128 characters)"));
 
 // sets the condition that the password must be between 8-128 characters, if not then the alert will render and return user to the initial prompt.
-  if (length < 8 || length > 128) {
+
+  if (length < 8 || length > 128 || isNaN(length) || length === null) {
     alert("Password needs to be between 8 - 128 characters");
-    generatePassword();
+    length = parseInt(prompt("How many characters do you like in your password? (Password needs to be between 8 - 128 characters"))
   }
 
   // var display prompt set for uppercase, lowercase, special (symbols), and numbers for users to include or not include in password creation. 'confirm' is used to verify if the user has selected to include each of the available character types. 
